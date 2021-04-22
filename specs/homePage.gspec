@@ -1,0 +1,45 @@
+@objects
+    wrapper                                 #wrapper
+    splash-heading                          h1.oppia-splash-h1
+    splash-h2-text                          .oppia-splash-h2-text
+    splash-h2-container                     .oppia-splash-h2-container 
+    login_button                            .protractor-mobile-test-login
+    splash-section-1                        .oppia-splash-section-one
+    splash-section-1-left                   .oppia-splash-section-one-left
+    splash-section-1-right                  .oppia-splash-section-one-right
+    splash-section-2                        .oppia-splash-section-two
+    splash-button-container                 .oppia-splash-button-container
+    splash-button                           .oppia-splash-button
+    splash-icon-container-1                 .oppia-splash-icon-1-container
+    splash-icon-container-2                 .oppia-splash-icon-2-container
+    splash-icon-container-3                 .oppia-splash-icon-3-container
+
+= Splash Section =
+    splash-heading:
+        inside splash-section-1
+    
+    splash-h2-text:
+        inside splash-h2-container
+        @on mobile 
+            above splash-button-container
+        @on desktop 
+            above splash-button-container 
+
+    splash-button:
+        inside splash-button-container
+    splash-section-1:
+        above splash-section-2
+    
+    splash-section-2:
+        count any splash-icon-container-* is 3
+    
+    splash-section-1-left:
+        @on mobile
+            above splash-section-1-right
+        @on desktop 
+            left-of splash-section-1-right ~0 px
+    
+    splash-icon-container*:
+        @on mobile,desktop
+            aligned horizontally top splash-icon-container-2
+    

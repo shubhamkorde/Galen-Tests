@@ -1,0 +1,223 @@
+{
+  "testId" : "1-homepage-page-on-mobile-emulation-device",
+  "name" : "HomePage page on mobile emulation device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Open http://localhost:8181/",
+      "status" : "info",
+      "time" : 1619088411751,
+      "type" : "node"
+    }, {
+      "name" : "Check layout: specs/homePage.gspec included tags: mobile",
+      "status" : "error",
+      "time" : 1619088418844,
+      "includedTags" : [ "mobile" ],
+      "sections" : [ {
+        "name" : "Splash Section",
+        "place" : {
+          "filePath" : "specs/homePage.gspec",
+          "lineNumber" : 17
+        },
+        "objects" : [ {
+          "name" : "splash-heading",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "inside splash-section-1",
+            "meta" : [ ],
+            "highlight" : [ "splash-heading", "splash-section-1" ]
+          } ]
+        }, {
+          "name" : "splash-h2-text",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 22
+            },
+            "name" : "inside splash-h2-container",
+            "meta" : [ ],
+            "highlight" : [ "splash-h2-text", "splash-h2-container" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 24
+            },
+            "name" : "above splash-button-container",
+            "meta" : [ {
+              "from" : {
+                "object" : "splash-h2-text",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "splash-button-container",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "14px"
+            } ],
+            "highlight" : [ "splash-h2-text", "splash-button-container" ]
+          } ]
+        }, {
+          "name" : "splash-button",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 29
+            },
+            "name" : "inside splash-button-container",
+            "errors" : [ "\"splash-button\" is not completely inside. The offset is 20px." ],
+            "highlight" : [ "splash-button", "splash-button-container" ]
+          } ]
+        }, {
+          "name" : "splash-section-1",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "above splash-section-2",
+            "meta" : [ {
+              "from" : {
+                "object" : "splash-section-1",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "splash-section-2",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "0px"
+            } ],
+            "highlight" : [ "splash-section-1", "splash-section-2" ]
+          } ]
+        }, {
+          "name" : "splash-section-2",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 34
+            },
+            "name" : "count any splash-icon-container-* is 3",
+            "highlight" : [ "splash-icon-container-2", "splash-icon-container-3", "splash-icon-container-1" ]
+          } ]
+        }, {
+          "name" : "splash-section-1-left",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 38
+            },
+            "name" : "above splash-section-1-right",
+            "meta" : [ {
+              "from" : {
+                "object" : "splash-section-1-left",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "splash-section-1-right",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "1px"
+            } ],
+            "highlight" : [ "splash-section-1-left", "splash-section-1-right" ]
+          } ]
+        }, {
+          "name" : "splash-icon-container-1",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "aligned horizontally top splash-icon-container-2",
+            "highlight" : [ "splash-icon-container-1", "splash-icon-container-2" ]
+          } ]
+        }, {
+          "name" : "splash-icon-container-2",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "aligned horizontally top splash-icon-container-2",
+            "highlight" : [ "splash-icon-container-2", "splash-icon-container-2" ]
+          } ]
+        }, {
+          "name" : "splash-icon-container-3",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 44
+            },
+            "name" : "aligned horizontally top splash-icon-container-2",
+            "highlight" : [ "splash-icon-container-3", "splash-icon-container-2" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "splash-section-2" : {
+          "area" : [ 0, 616, 435, 159 ]
+        },
+        "splash-section-1-right" : {
+          "area" : [ 0, 329, 435, 287 ]
+        },
+        "splash-h2-text" : {
+          "area" : [ 48, 207, 338, 82 ]
+        },
+        "splash-button-container" : {
+          "area" : [ 48, 303, 338, 26 ]
+        },
+        "splash-icon-container-2" : {
+          "area" : [ 174, 646, 135, 77 ]
+        },
+        "splash-section-1-left" : {
+          "area" : [ 48, 108, 337, 220 ]
+        },
+        "splash-icon-container-3" : {
+          "area" : [ 345, 646, 60, 99 ]
+        },
+        "splash-section-1" : {
+          "area" : [ 0, 56, 435, 560 ]
+        },
+        "splash-heading" : {
+          "area" : [ 48, 108, 338, 40 ]
+        },
+        "splash-h2-container" : {
+          "area" : [ 48, 207, 338, 82 ]
+        },
+        "splash-icon-container-1" : {
+          "area" : [ 30, 646, 90, 78 ]
+        },
+        "splash-button" : {
+          "area" : [ 110, 283, 214, 46 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    }, {
+      "name" : "Screenshot & Page source",
+      "status" : "info",
+      "attachments" : [ "file-2-screenshot.png", "file-3-page-source.txt" ],
+      "time" : 1619088418846,
+      "extras" : {
+        "Location" : {
+          "value" : "http://localhost:8181/",
+          "type" : "link"
+        }
+      },
+      "type" : "node"
+    } ]
+  }
+}

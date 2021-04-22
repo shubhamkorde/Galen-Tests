@@ -1,0 +1,48 @@
+{
+  "tests" : [ {
+    "name" : "HomePage page on mobile emulation device",
+    "startedAt" : 1619088411746,
+    "endedAt" : 1619088418845,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 11,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 12
+    },
+    "testId" : "1-homepage-page-on-mobile-emulation-device",
+    "duration" : 7099,
+    "groups" : [ ],
+    "failed" : true
+  }, {
+    "name" : "HomePage page on tablet emulation device",
+    "startedAt" : 1619088419138,
+    "endedAt" : 1619088421883,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 6,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 7
+    },
+    "testId" : "2-homepage-page-on-tablet-emulation-device",
+    "duration" : 2745,
+    "groups" : [ ],
+    "failed" : true
+  }, {
+    "name" : "HomePage page on desktop emulation device",
+    "startedAt" : 1619088422113,
+    "endedAt" : 1619088425069,
+    "failed" : true,
+    "statistic" : {
+      "passed" : 11,
+      "errors" : 1,
+      "warnings" : 0,
+      "total" : 12
+    },
+    "testId" : "3-homepage-page-on-desktop-emulation-device",
+    "duration" : 2956,
+    "groups" : [ ],
+    "failed" : true
+  } ]
+}

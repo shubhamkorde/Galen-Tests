@@ -1,0 +1,141 @@
+{
+  "testId" : "2-homepage-page-on-tablet-emulation-device",
+  "name" : "HomePage page on tablet emulation device",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Open http://localhost:8181/",
+      "status" : "info",
+      "time" : 1619088419138,
+      "type" : "node"
+    }, {
+      "name" : "Check layout: specs/homePage.gspec included tags: tablet",
+      "status" : "error",
+      "time" : 1619088421883,
+      "includedTags" : [ "tablet" ],
+      "sections" : [ {
+        "name" : "Splash Section",
+        "place" : {
+          "filePath" : "specs/homePage.gspec",
+          "lineNumber" : 17
+        },
+        "objects" : [ {
+          "name" : "splash-heading",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 19
+            },
+            "name" : "inside splash-section-1",
+            "meta" : [ ],
+            "highlight" : [ "splash-heading", "splash-section-1" ]
+          } ]
+        }, {
+          "name" : "splash-h2-text",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 22
+            },
+            "name" : "inside splash-h2-container",
+            "meta" : [ ],
+            "highlight" : [ "splash-h2-text", "splash-h2-container" ]
+          } ]
+        }, {
+          "name" : "splash-button",
+          "specs" : [ {
+            "status" : "error",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 29
+            },
+            "name" : "inside splash-button-container",
+            "errors" : [ "\"splash-button\" is not completely inside. The offset is 20px." ],
+            "highlight" : [ "splash-button", "splash-button-container" ]
+          } ]
+        }, {
+          "name" : "splash-section-1",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 31
+            },
+            "name" : "above splash-section-2",
+            "meta" : [ {
+              "from" : {
+                "object" : "splash-section-1",
+                "edge" : "bottom"
+              },
+              "to" : {
+                "object" : "splash-section-2",
+                "edge" : "top"
+              },
+              "expectedDistance" : ">= 0px",
+              "realDistance" : "0px"
+            } ],
+            "highlight" : [ "splash-section-1", "splash-section-2" ]
+          } ]
+        }, {
+          "name" : "splash-section-2",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "specs/homePage.gspec",
+              "lineNumber" : 34
+            },
+            "name" : "count any splash-icon-container-* is 3",
+            "highlight" : [ "splash-icon-container-2", "splash-icon-container-3", "splash-icon-container-1" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "splash-section-2" : {
+          "area" : [ 0, 689, 585, 140 ]
+        },
+        "splash-h2-text" : {
+          "area" : [ 67, 207, 450, 56 ]
+        },
+        "splash-button-container" : {
+          "area" : [ 67, 277, 450, 26 ]
+        },
+        "splash-icon-container-2" : {
+          "area" : [ 222, 719, 180, 58 ]
+        },
+        "splash-icon-container-3" : {
+          "area" : [ 450, 719, 105, 80 ]
+        },
+        "splash-section-1" : {
+          "area" : [ 0, 56, 585, 633 ]
+        },
+        "splash-heading" : {
+          "area" : [ 67, 108, 450, 40 ]
+        },
+        "splash-h2-container" : {
+          "area" : [ 67, 207, 450, 56 ]
+        },
+        "splash-icon-container-1" : {
+          "area" : [ 30, 719, 120, 59 ]
+        },
+        "splash-button" : {
+          "area" : [ 185, 257, 214, 46 ]
+        }
+      },
+      "screenshot" : "layout-4-screenshot.png",
+      "type" : "layout"
+    }, {
+      "name" : "Screenshot & Page source",
+      "status" : "info",
+      "attachments" : [ "file-5-screenshot.png", "file-6-page-source.txt" ],
+      "time" : 1619088421883,
+      "extras" : {
+        "Location" : {
+          "value" : "http://localhost:8181/",
+          "type" : "link"
+        }
+      },
+      "type" : "node"
+    } ]
+  }
+}
